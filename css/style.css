@@ -22,6 +22,10 @@ body{
     flex-basis: 50%;
 }
 
+.mrg-v-auto{
+    margin: auto 0;
+}
+
 /**** UPPER SECTION ****/
 .container{
     flex-grow: 1;
@@ -116,4 +120,7 @@ body{
     height: 100px;
     flex-shrink: 0;
      background-color: gray; /* for visual */
+     display: flex;
+     justify-content: space-between;
 }
+
