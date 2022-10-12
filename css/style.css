@@ -10,6 +10,18 @@ body{
     flex-direction: column;
 }
 
+.flex{
+    display: flex;
+}
+
+.col-1-4{
+    flex-basis: 25%;
+}
+
+.col-1-2{
+    flex-basis: 50%;
+}
+
 /**** UPPER SECTION ****/
 .container{
     flex-grow: 1;
@@ -33,7 +45,7 @@ body{
 
 .upper-bar{
     flex-shrink: 0;
-    border: 1px dotted green; /* for visual */
+    border: 1px dotted red; /* for visual */
     display: flex;
     justify-content: flex-end;
 }
@@ -50,6 +62,30 @@ body{
 .content-section{
     flex-grow: 1;
     overflow: auto;
+}
+
+.content-menu{
+    background-color: beige; /* for visual */
+}
+
+.content-section ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content-section ul li{
+    text-align: center;
+}
+
+.recent-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal-container{
+    display: flex;
 }
 
 
