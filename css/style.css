@@ -87,7 +87,27 @@ body{
 .personal-container{
     display: flex;
 }
+.sidebar{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
 
+.sidebar-section{
+    flex-grow: 1;
+    padding: .5rem;
+    background-color: aqua; /* for visual */
+    overflow: auto;
+}
+
+.plist-item{
+    display: none;
+}
+
+.user{
+    flex-shrink: 0;
+    padding: 0 .5rem;
+}
 
 /**** TOOLBAR ****/
 .toolbar{
