@@ -58,6 +58,10 @@ img{
     color: var(--color3);
 }
 
+.mirror-img{
+    transform: rotateY(180deg);
+}
+
 /**** UPPER SECTION ****/
 .container{
    flex-grow: 1;
@@ -257,4 +261,39 @@ img{
     margin: auto 0;
     padding: 0 1rem;
     flex-direction: column;
+}
+
+.upper-tools{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.upper-tools img{
+    width: 30px;
+    aspect-ratio: 1/1;
+}
+
+#replay-img{
+    width: 25px;
+}
+
+#play-img{
+    width: 50px;
+}
+
+.bottom-tools{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.time-line{
+    flex-basis: 70%;
+    background-color: var(--color3);
+    border-radius: 4px;
+    height: 7px;
 }
