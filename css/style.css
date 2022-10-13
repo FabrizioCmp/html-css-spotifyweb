@@ -171,11 +171,16 @@ margin-top: .5rem;
     margin: auto;
     
 }
+
 .w{
-    width: 35px;
+    width: 25px;
+    margin-right: .7rem;
+}
+
+.download{
     position: relative;
-    left: 2px;
-    margin-right: 0.5em;
+    left: 8px;
+    margin-bottom: .4rem;
 }
 
 .user{
