@@ -1,0 +1,27 @@
+
+/* small-screnn-sm */
+@media screen and ( min-width:568px) {
+
+    .txt-center-sm{
+        text-align: center;
+    }
+    
+    .col-1-3-sm{
+        flex-basis: calc(100% / 3);
+    }
+
+
+}
+
+/* medium-screen-md */
+@media screen and (min-width: 768px) {
+    .col-1-5-md{
+        flex-basis: calc(100% /5);
+    }
+
+}
+
+/* large-screen-lg */
+@media screen and (min-width: 992px) {
+  
+}
