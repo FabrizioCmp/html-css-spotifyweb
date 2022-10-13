@@ -10,6 +10,26 @@
         flex-basis: calc(100% / 3);
     }
 
+    .logo-small{
+        display: none;
+    }
+
+    .logo-big{
+        display: block;
+    }
+    .menu-text{
+        display: inline-block;
+    }
+    .user-border{
+        border-width: 2px;
+    }
+    .sidebar{
+        width: 200px;
+    }
+
+    .playlist{
+        display: block;
+    }
 
 }
 
@@ -19,7 +39,11 @@
         flex-basis: calc(100% / 5);
     }
 
+    .col-1-4-md{
+        flex-basis: calc(100% / 4);
+    }
 }
+
 
 /* large-screen-lg */
 @media screen and (min-width: 992px) {

@@ -16,28 +16,35 @@
 
     <!-- TOP SECTION -->
     <div class="container">
+
         <!-- Menu sidebar -->
         <div class="sidebar">
             <div class="sidebar-section">
-                <div class="logo">
+                <div class="logo padd-h5">
                     <img class="logo-small" src="imgs/logo-small.svg" alt="">
                     <img class="logo-big" src="imgs/logo.svg" alt="">
                 </div>
                 <div class="menu">
-                    <div class="menu-item">
-                        <img class="sidebar-icon" src="imgs/home.svg" alt="">
+                    <div class="menu-item padd-h5">
+                        <svg class="sidebar-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="#74767B" d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"/></svg>
+                        <span class="menu-text">Home</span>
                     </div>
-                    <div class="menu-item">
-                        <img class="sidebar-icon" src="imgs/search.svg" alt="">
+                    <div class="menu-item padd-h5">
+                        <img class="sidebar-icon " src="imgs/search.svg" alt="">
+                        <span class="menu-text">Home</span>
                     </div>
-                    <div class="menu-item">
+                    <div class="menu-item padd-h5">
                         <img class="sidebar-icon" src="imgs/libreria.svg" alt="">
+                        <span class="menu-text">Home</span>
                     </div>
                 </div>
                 <div class="playlist">
-                    <h2></h2>
+                    <h2>playlist</h2>
                     <div class="add-plist">
-
+                        <button class="btn-playlist">
+                            <span class="plus">&plus;</span> 
+                            <span class="color-gray">Crea playlist</span>
+                        </button>
                     </div>
                     <div class="plist-item">Nuova playlist</div>
                     <div class="plist-item">Nuova playlist</div>
@@ -49,14 +56,14 @@
                 </div>
             </div>    
             <div class="user">
-                <div>   
-                    <div><img class="download-img" src="imgs/download.svg" alt=""></div>
-                    <div class="sidebar-text">installa app</div>   
+                <div class="menu-item">   
+                    <div class="w"> <img class="download-img"  src="imgs/download.svg" alt=""></div>
+                    <div class="menu-text">installa app</div>   
                 </div>
-                <hr class="sidebar-text">
-                <div>   
-                    <div class="padd-5"><img class=" user-img" src="imgs/profile.svg" alt=""></div>
-                    <div class="sidebar-text">installa app</div>   
+                <!-- <hr class="sidebar-line"> -->
+                <div class="menu-item user-border">   
+                    <div class="padd-5 "><img class="user-img" src="imgs/profile.svg" alt=""></div>
+                    <div class="menu-text">Jhon Doe</div>   
                 </div>
 
             </div>
@@ -88,32 +95,32 @@
                 <!-- Recent section -->
                 <h1 class="content-section-title">Rcently played</h1>
                 <div class="recent-container">
-                    <div class="card col-1-2">
+                    <div class="card col-1-2 col-1-4-md col-1-6-lg">
                         <div class="img-card"><img src="imgs/metal_lifting.jpg" alt=""></div>
                         <div class="title-card">title</div>
                         <div class="subtitle-card">subtitle</div>
                     </div>
-                    <div class="card col-1-2">
+                    <div class="card col-1-2 col-1-4-md col-1-6-lg">
                         <div class="img-card"><img src="imgs/stranger.jpeg" alt=""></div>
                         <div class="title-card">title</div>
                         <div class="subtitle-card">subtitle</div>
                     </div>
-                    <div class="card col-1-2">
+                    <div class="card col-1-2 col-1-4-md col-1-6-lg">
                         <div class="img-card"><img src="imgs/aquietplace.jpeg" alt=""></div>
                         <div class="title-card">title</div>
                         <div class="subtitle-card">subtitle</div>
                     </div>
-                    <div class="card col-1-2">
+                    <div class="card col-1-2 col-1-4-md col-1-6-lg">
                         <div class="img-card"><img src="imgs/split.jpeg" alt=""></div>
                         <div class="title-card">title</div>
                         <div class="subtitle-card">subtitle</div>
                     </div>
-                    <div class="card col-1-2">
+                    <div class="card col-1-2 col-1-4-md col-1-6-lg">
                         <div class="img-card"><img src="imgs/cure.jpeg" alt=""></div>
                         <div class="title-card">title</div>
                         <div class="subtitle-card">subtitle</div>
                     </div>
-                    <div class="card col-1-2">
+                    <div class="card col-1-2 col-1-4-md col-1-6-lg">
                         <div class="img-card"><img src="imgs/sinister.jpeg" alt=""></div>
                         <div class="title-card">title</div>
                         <div class="subtitle-card">subtitle</div>
@@ -124,11 +131,11 @@
                 <h1 class="content-section-title">Creato per John Doe</h1>
                 <div class="subtitle"> PIù ascolti, più accurati saranno i suggerimenti</div>
                 <div class="personal-container">
-                    <div class="card col-1-2">
+                    <div class="card col-1-2 col-1-4-md col-1-6-lg">
                         <div class="img-card"><img src="imgs/radar.jpeg" alt=""></div>
                         <div class="title-card">title</div>
                     </div>
-                    <div class="card col-1-2">
+                    <div class="card col-1-2 col-1-4-md col-1-6-lg">
                         <div class="img-card"><img src="imgs/radar.jpeg" alt=""></div>
                         <div class="title-card">title</div>
                     </div>
@@ -138,11 +145,11 @@
                 <h1 class="content-section-title">Artirsti più popolari</h1>
                 <div class="subtitle "> PIù ascolti, più accurati saranno i suggerimenti</div>
                 <div class="personal-container">
-                    <div class="card col-1-2">
+                    <div class="card col-1-2 col-1-4-md col-1-6-lg">
                         <div class="img-card "><img class="round-img" src="imgs/youg.jpeg" alt=""></div>
                         <div class="title-card">title</div>
                     </div>
-                    <div class="card col-1-2">
+                    <div class="card col-1-2 col-1-4-md col-1-6-lg">
                         <div class="img-card"><img class="round-img" src="imgs/einaudi.jpeg" alt=""></div>
                         <div class="title-card">title</div>
                     </div>
