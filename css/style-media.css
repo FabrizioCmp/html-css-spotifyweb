@@ -16,12 +16,14 @@
 /* medium-screen-md */
 @media screen and (min-width: 768px) {
     .col-1-5-md{
-        flex-basis: calc(100% /5);
+        flex-basis: calc(100% / 5);
     }
 
 }
 
 /* large-screen-lg */
 @media screen and (min-width: 992px) {
-  
+    .col-1-6-lg{
+        flex-basis: calc(100% / 6);
+    }
 }

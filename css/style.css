@@ -54,16 +54,16 @@ img{
 
 /**** UPPER SECTION ****/
 .container{
-    flex-grow: 1;
+   flex-grow: 1;
     display: flex;
-    overflow: auto;
 }
+
 /* sidebar */
 .sidebar{
     width: 60px;
     flex-shrink: 0;
     background-color: black; /* for visual */
-        min
+
 }
 
 /* main */
@@ -72,7 +72,6 @@ img{
     display: flex;
     width: 100%;
     flex-direction: column;
-    overflow: auto;
 }
 
 .upper-bar{
@@ -92,13 +91,14 @@ img{
     text-transform: uppercase;
     padding: .5rem 2rem;
     font-size: small;
-
+    flex-shrink: 0;
 }
 
 
 .content-section{
-    flex-grow: 1;
     background-color: var(--color2);
+    overflow: scroll;  
+    flex-grow: 1;
 }
 
 .content-menu{
@@ -130,6 +130,7 @@ img{
 
 .personal-container{
     display: flex;
+    padding-top: 1rem;
 }
 .sidebar{
     color: white;
@@ -158,8 +159,8 @@ img{
 .toolbar{
     height: 100px;
     flex-shrink: 0;
-     background-color: gray; /* for visual */
-     display: flex;
-     justify-content: space-between;
+    background-color: gray; /* for visual */
+    display: flex;
+    justify-content: space-between;
 }
 
