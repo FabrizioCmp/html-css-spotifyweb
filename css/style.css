@@ -64,8 +64,16 @@ img{
     color: var(--color3);
 }
 
+#white{
+    color: white;
+}
+
 .mirror-img{
     transform: rotateY(180deg);
+}
+
+.relative{
+    position: relative;
 }
 
 /**** UPPER SECTION ****/
@@ -80,6 +88,10 @@ img{
 .sidebar-icon{
     padding: .5rem;
     max-width: 50px;
+}
+
+.menu-item > svg{
+    fill: #74767B; 
 }
 
 
@@ -140,7 +152,7 @@ img{
 }
 
 .plist-item{
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
 }
 
 .btn-playlist{
@@ -162,9 +174,6 @@ img{
     margin-right: .5rem;
     margin-bottom: .5rem;
 }
-margin-top: .5rem;
-
-
 
 .download-img{
     padding: .5rem;
@@ -172,15 +181,16 @@ margin-top: .5rem;
     
 }
 
-.w{
-    width: 25px;
-    margin-right: .7rem;
+.width-35{
+    width: 35px;
+    margin-right: .4rem;
 }
 
 .download{
     position: relative;
-    left: 8px;
+    left: 4px;
     margin-bottom: .4rem;
+    font-size: .7rem;
 }
 
 .user{
@@ -254,10 +264,12 @@ margin-top: .5rem;
 
 }
 
-.content-section ul li{
+.content-section ul a{
     text-transform: uppercase;
     font-weight: bolder;
     font-size: .7rem;
+    text-decoration: none;
+    color: #74767B;
 }
 
 .content-section-title{
@@ -268,6 +280,10 @@ margin-top: .5rem;
 
 .card{
     padding: .5rem;
+}
+
+.img-card{
+    position: relative;
 }
 
 .title-card{
@@ -318,6 +334,11 @@ margin-top: .5rem;
 }
 .center-section{
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
 }
 
 .right-section{
@@ -387,11 +408,12 @@ margin-top: .5rem;
 }
 
 .bottom-tools{
-    max-width: 250px;
+    max-width: 350px;
     display: flex;
     align-items: center;
     column-gap: 1rem;
     margin: auto;
+    font-size: .5rem;
 }
 
 .right-section img{
@@ -401,26 +423,72 @@ margin-top: .5rem;
 }
 
 .time-line{
-    flex-basis: 70%;
+    width: 20vw;
     background-color: var(--color3);
     border-radius: 4px;
     height: 6px;
+    max-width: 300px;
 }
 
 .volume-line{
-    width: 70px;
+    width: 10vw;
+    max-width: 150px;
     height: 5px;
     background-color: var(--color3);
+    border-radius: 3px;
+
 }
 
 
 /* HOVER effetcs */
 
+
+/* sidebar hover(home,search,library */
 .menu-item:hover{
     border-left: 3px solid greenyellow;
-    color: white;
 }
 
 .menu-item:hover > svg{
     fill: white;
+    color: white;
 }
+.menu-item:hover > .menu-text{
+    color: white;
+}
+
+
+/* card hover */
+
+.play-hover{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.card:hover .play-hover{
+    display: block;
+}
+
+
+/* hover main menù section */
+
+.hover-line{
+    display: none;
+    background-color: greenyellow;
+    width: 30px;
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    bottom: -3px;
+    transform: translate(-50%);
+}
+
+.content-section ul li:hover .hover-line{
+    display: block;
+}
+
